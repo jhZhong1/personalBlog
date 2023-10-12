@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/album.css">
+</head>
+<body>
+        <!-- 头部 -->
+        <nav class="mainwidth nav">
+            <div class="logo">小伙子的博客</div>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="请输入搜索内容">
+                <button class="search-button">搜索</button>
+            </div>
+            <div class="regist">
+                还未注册？<a href="./注册.html">点击注册</a>
+            </div>
+        </nav>
+        <!-- 主体 -->
+        <div class="main mainwidth">
+            <!-- 侧边栏 -->
+            <div class="slider">
+                <div class="headPortrait">
+                    <img src="../images/头像.jpg" alt="头像">
+                    <h6>哈哈哈哈，笑得就是你...</h6>
+                </div>
+                <h4>导航</h4>
+                <div class="sliderNav">
+                    <ul>
+                        <li><a href="./首页.html" id="nav1">首页</a></li>
+                        <li class="active"><a href="./相册.html" id="nav2">相册</a></li>
+                        <li><a href="./音乐.html" id="nav3">音乐</a></li>
+                        <li><a href="./留言.html" id="nav4">留言</a></li>
+                        <li><a href="./关于.html" id="nav5">关于</a></li>
+        
+                    </ul>
+                </div>
+            </div>
+            <!-- 正文 -->
+            <div class="content">
+                <!-- 校园生活 -->
+                <div class="album top">
+                    <div class="albumTitle">校园生活</div>
+                    <ul class="photoList"> 
+                        <li class="photoItem">
+                            <img src="../images/相册/校园生活/p1.jpeg" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">长沙学院-东南门</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/校园生活/p1.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">长沙学院-理工楼</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/校园生活/p2.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">长沙学院-图书馆</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/校园生活/p3.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">长沙学院-校园卡</p>
+                            </div>
+                        </li>
+                        <li class="addPhoto">
+                            <span>+</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- 风景照片 -->
+                <div class="album">
+                    <div class="albumTitle">风景照片</div>
+                    <ul class="photoList">
+                        <li class="photoItem">
+                            <img src="../images/相册/风景照片/p1-云和梯田.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">云和梯田</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/风景照片/p2-日出.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">日出</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/风景照片/p3.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">好看就拿来了</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/风景照片/p4.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">我也不知道叫什么</p>
+                            </div>
+                        </li>
+                        <li class="addPhoto">
+                            <span>+</span>
+                        </li>
+                    </ul>
+                
+                </div>
+                <!-- 艺术鉴赏 -->
+                <div class="album">
+                    <div class="albumTitle">艺术鉴赏</div>
+                    <ul class="photoList">
+                        <li class="photoItem">
+                            <img src="../images/相册/艺术鉴赏/p1-林克.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">林克帅不帅？</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/艺术鉴赏/p2-皮影.jpg" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">非遗文化-皮影</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/艺术鉴赏/p3清明上河图.jpg" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">清明上河图（部分）</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/艺术鉴赏/p4剪纸风格插画.jpg" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">剪纸风格插画</p>
+                            </div>
+                        </li>
+                        <li class="photoItem">
+                            <img src="../images/相册/艺术鉴赏/p5一人之下.webp" alt="">
+                            <div class="photoOverlay">
+                                <p class="photoTitle">一人之下-王也道长</p>
+                            </div>
+                        </li>
+                        <li class="addPhoto">
+                            <span>+</span>
+                        </li>
+                    </ul>   
+                </div>
+                <!-- 放大图片 -->
+                <div id="modal" class="modal">
+                    <div class="modalContent">
+                        <img id="modalImg" class="modalImg" src="">
+                        <span id="modalClose" class="modalClose">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧边栏 -->
+            <div class="sliderRight">
+                <!-- 热门文章 -->
+                <div class="hotArticle">
+                    <h3>热门文章</h3>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../images/热门文章/p1.webp" alt=""></a>
+                            <a href="./文章/java学习.html" class="articleName">java学习</a>
+                            <span>199</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/热门文章/p2.webp" alt=""></a>
+                            <a href="./文章/如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                            <span>189</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/热门文章/p3.webp" alt=""></a>
+                            <a href="./文章/javaWeb.html" class="articleName">javaWeb</a>
+                            <span>179</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/热门文章/p4.webp" alt=""></a>
+                            <a href="./文章/java学习.html" class="articleName">java学习</a>
+                            <span>169</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/热门文章/p5.webp" alt=""></a>
+                            <a href="./文章/如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                            <span>100</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 博客信息 -->
+                <div class="blogMsg">
+                    <h3>博客信息</h3>
+                    <div class="box">
+                        <span>文章数目</span><i>16</i>
+                        <span>评论数目</span><i>10</i>
+                        <span>运行天数</span><i>1天</i>
+                        <span>最后活动</span><i>1天前</i>
+                    </div>
+                </div>
+                <!-- 标签云 -->
+                <div class="tagCloug">
+                    <h3>标签云</h3>
+                    <br>
+                    <a href="#" class="tag">读书</a>
+                    <a href="#" class="tag">java</a>
+                    <a href="#" class="tag">mysql</a>
+                    <a href="#" class="tag">vue</a>
+                    <a href="#" class="tag">HTML</a>
+                    <a href="#" class="tag">css</a>
+                    <a href="#" class="tag">javascript</a>
+                    <a href="#" class="tag">spring</a>
+                    <a href="#" class="tag">+</a>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="../js/scorall.js"></script> -->
+        <!-- 撒花特效 -->
+        <script src="../js/flower.js"></script>
+        <script src="../js/nav.js"></script>
+        <!-- 图片放大 -->
+        <script src="../js/album.js"></script>
+</body>
+</html>

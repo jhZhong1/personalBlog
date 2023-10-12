@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/music.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <nav class="mainwidth nav">
+        <div class="logo">小伙子的博客</div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-button">搜索</button>
+        </div>
+        <div class="regist">
+            还未注册？<a href="./注册.html">点击注册</a>
+        </div>
+    </nav>
+    <!-- 主体 -->
+    <div class="main mainwidth">
+        <!-- 侧边栏 -->
+        <div class="slider">
+            <div class="headPortrait">
+                <img src="../images/头像.jpg" alt="头像">
+                <h6>哈哈哈哈，笑得就是你...</h6>
+            </div>
+            <h4>导航</h4>
+            <div class="sliderNav">
+                <ul>
+                    <li><a href="./首页.html" id="nav1">首页</a></li>
+                    <li><a href="./相册.html" id="nav2">相册</a></li>
+                    <li class="active"><a href="./音乐.html" id="nav3">音乐</a></li>
+                    <li><a href="./留言.html" id="nav4">留言</a></li>
+                    <li><a href="./关于.html" id="nav5">关于</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 正文 -->
+        <div class="content">
+            <!-- 音乐播放器 -->
+            <div class="musicPlayer">
+                <!-- 唱片 -->
+                <div class="record">
+                    <img src="../images/life图片.webp" alt="唱片照片">
+                </div>
+                <h3>歌曲名：Life <i></i> 制作团队：Tubo</h3>
+                <div class="controls">
+                    <audio id="myAudio" controls>
+                        <source src="../music/life.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <div class="playback-controls">
+                        <button id="playBtn" class="btn btn-primary">播放</button>
+                        <button id="pauseBtn" class="btn btn-warning">暂停</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧边栏 -->
+        <div class="sliderRight">
+            <!-- 热门文章 -->
+        <div class="hotArticle">
+            <h3>热门文章</h3>
+            <ul>
+                <li>
+                    <a href="#"><img src="../images/热门文章/p1.webp" alt=""></a>
+                    <a href="./文章/java学习.html" class="articleName">java学习</a>
+                    <span>199</span>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/热门文章/p2.webp" alt=""></a>
+                    <a href="./文章/如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                    <span>189</span>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/热门文章/p3.webp" alt=""></a>
+                    <a href="./文章/javaWeb.html" class="articleName">javaWeb</a>
+                    <span>179</span>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/热门文章/p4.webp" alt=""></a>
+                    <a href="./文章/java学习.html" class="articleName">java学习</a>
+                    <span>169</span>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/热门文章/p5.webp" alt=""></a>
+                    <a href="./文章/如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                    <span>100</span>
+                </li>
+            </ul>
+        </div>
+            <!-- 博客信息 -->
+            <div class="blogMsg">
+                <h3>博客信息</h3>
+                <div class="box">
+                    <span>文章数目</span><i>16</i>
+                    <span>评论数目</span><i>10</i>
+                    <span>运行天数</span><i>1天</i>
+                    <span>最后活动</span><i>1天前</i>
+                </div>
+            </div>
+            <!-- 标签云 -->
+            <div class="tagCloug">
+                <h3>标签云</h3>
+                <br>
+                <a href="#" class="tag">读书</a>
+                <a href="#" class="tag">java</a>
+                <a href="#" class="tag">mysql</a>
+                <a href="#" class="tag">vue</a>
+                <a href="#" class="tag">HTML</a>
+                <a href="#" class="tag">css</a>
+                <a href="#" class="tag">javascript</a>
+                <a href="#" class="tag">spring</a>
+                <a href="#" class="tag">+</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../js/scorall.js"></script> -->
+    <!-- 撒花特效 -->
+    <script src="../js/flower.js"></script>
+    <script src="../js/nav.js"></script>
+    <!-- 音乐播放器 -->
+    <script src="../js/music.js"></script>
+</body>
+
+</html>

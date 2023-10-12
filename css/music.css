@@ -1,0 +1,81 @@
+/* 内容 */
+.content {
+    margin-left: 251px;
+    width: 721px;
+    height: 100vh;
+    /* background-color: #ececec; */
+    background-image: url("../images/音乐界面背景图片.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.musicPlayer {
+    margin-top: 210px;
+    margin-left: 220px;
+    text-align: left;
+}
+
+/* 唱片 */
+.record {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #2a2828;
+    overflow: hidden;
+    text-align: center;
+    line-height: 300px;
+}
+
+.record img {
+
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.musicPlayer h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2a2828;
+    margin-left: 20px;
+}
+
+.musicPlayer h3 i {
+    padding: 0 5px;
+}
+
+/* 音频播放器 */
+.controls {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.controls audio::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+.playback-controls {
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.playback-controls button {
+    margin-right: 80px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.record.rotate img {
+    animation: rotate 3s infinite linear;
+}

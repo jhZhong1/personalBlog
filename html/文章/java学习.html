@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页-文章</title>
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../css/base.css">
+    <link rel="stylesheet" href="./../../css/common.css">
+    <link rel="stylesheet" href="./../../css/articleTxt.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <nav class="mainwidth nav">
+        <div class="logo">小伙子的博客</div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-button">搜索</button>
+        </div>
+        <div class="regist">
+            还未注册？<a href="./../注册.html">点击注册</a>
+        </div>
+    </nav>
+    <!-- 主体 -->
+    <div class="main mainwidth">
+        <!-- 侧边栏 -->
+        <div class="slider">
+            <div class="headPortrait">
+                <img src="./../../images/头像.jpg" alt="头像">
+                <h6>哈哈哈哈，笑得就是你...</h6>
+            </div>
+            <h4>导航</h4>
+            <div class="sliderNav">
+                <ul>
+                    <li class="active"><a href="./../首页.html" id="nav1">首页</a></li>
+                    <li><a href="./../相册.html" id="nav2">相册</a></li>
+                    <li><a href="./../音乐.html" id="nav3">音乐</a></li>
+                    <li><a href="./../留言.html" id="nav4">留言</a></li>
+                    <li ><a href="./关于.html" id="nav5">关于</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 正文 -->
+        <div class="content">
+            <div class="aticleTxt">
+                <div class="return"><a href="./../首页.html">&lt;返回</a></div>
+                <h3>java学习</h3>
+                <h5>第一阶段： Java 基础</h5>
+                <p>
+                    最开始要学习的是 Java 基础，学习了这部分，就会对 Java 语言有一个初步的了解。其实大部分语言的基础知识都是大同小异，如果之前已经学习过其他语言如C、C++，那学习这部分会更快。
+                    这部分主要学习的内容有：基本程序结构，类与对象，接口，泛型，反射，集合，异常与调试， Java 网络编程， Java I/O和多线程。
+                    学 Java 基础，推荐大家看尚硅谷宋红康老师的 Java 教程，宋老师的课程更适合零基础学员，从 Java 语言起源开始，循序渐进，知识点剖析细致。
+                    宋老师的 Java 基础教程：尚硅谷Java零基础入门教程（含百道Java真题，2万多行Java代码实战）_哔哩哔哩_bilibili
+                    除此之外，还可以阅读《 Java 核心技术 卷I》，这本书偏向实用，广度和深度都恰到好处。其中，第7-9章讲述了 Java 的GUI编程， Java 的GUI开发使用并不多，这部分可以先跳过。
+                    网上也有一些不错的文档教程网站，可以辅助学习：
+                    廖雪峰 Java 教程：Java教程 - 廖雪峰的官方网站
+                    菜鸟教程 Java ：Java 教程 | 菜鸟教程
+                    当学完了这部分，就可以做个图书管理系统、学生管理系统这样的小项目了。还记得库森在大二学完这部分，就跟着教程学做了个贪吃蛇游戏，还是蛮有成就感的。
+                    当然，时间有限的小伙伴，可以不用做这块的项目，直接做 Java Web 项目就好了。
+                </p>
+                <h5>第二阶段：数据库</h5>
+                <p>
+                    MySQL 和 Oracle 都是广受企业欢迎的数据库，其中 MySQL 是目前应用最广泛的开源关系数据库，对于新手或者校招的小伙伴，我们目前只学习 MySQL 就可以了。
+
+                    这部分主要学习的内容有：数据库的CRUD操作、JDBC API、数据库特性和数据库连接池。
+
+                    其中，数据库连接池是为了避免频繁地创建和销毁 JDBC 连接，常见连接池包括 C3P0，Druid 和 HikariCP，目前使用最广泛的是HikariCP。
+
+                    尚硅谷的MySQL入门视频：MySQL_基础+高级篇- 数据库 -sql -mysql教程_mysql视频_mysql入门_尚硅谷_哔哩哔哩_bilibili
+
+                    书籍方面，推荐入门的小伙伴看《MySQL必知必会》，是一本小册子，这本书实践性很强，基本没有什么理论的堆砌，非常适合入门。
+
+                    如果想要深入学习，可以看《高性能 MySQL》，这本书是MySQL领域的经典之作，不过就是太厚了，面试重点看索引部分就可以了。
+
+                    除此之外，如果要深入学习MySQL的使用和原理，可以看极客时间的专栏《MySQL实战45讲》，阿里资深技术专家讲解的课程，有很多生产经常遇到的问题，非常有深度。
+                </p>
+
+                <h5>第三阶段： Java Web</h5>
+
+                <p>
+                    学习 Java Web，我们不仅需要掌握后端 Java 技术，还需要学习些前端知识。
+
+                    前端有三大基础技术 Html、CSS和 Java Script，初学的话，学习这些就可以了。如果想做出更好的交互式效果，可以再学习Vue和React等前端技术。
+
+                    后端 Java 技术包括 Servlet、Filter、Listener、Session、Cookie、JSP、EL 表达式和 JSTL 等。
+
+                    其中，像 JSP 这样比较老的技术，目前在各大互联网公司基本不再使用，已经被 Freemark、Thymeleaf 这样的模板引擎所替代，我们只需要了解基本使用即可。
+
+                    入门 Java Web，推荐尚硅谷的 Java Web 教程，教程不仅包括前端三大技术，还有后端 Java 技术，最后还会带大家做一个书城项目。
+
+                    Java Web教程：尚硅谷最新版JavaWeb全套教程,java web零基础入门完整版_哔哩哔哩_bilibili
+
+                    第四阶段：主流框架
+
+                    这部分我们要学习的主流框架主要有 Spring、Spring MVC 和 MyBatis，俗称 SSM 框架。
+
+                    曾经的 SSH 框架，即 Struts2、Spring、Hibernate 框架，已经逐渐被 SSM 替代，现在可以不用再学 Struts2 和 Hibernate 框架了。
+
+                    学习这些框架之前，我们先来学习项目管理利器Maven和Git。
+                </p>
+                <h5>Maven</h5>
+                <p>
+                    Maven 是一个项目管理工具，它基于项目对象模型(POM)的概念，它可以管理项目的构建、报告和文档。
+
+                    Maven 本质就是一个巨大的 jar 包资源库，使用 Maven 构建项目，只需在项目的 pom.xml 中配置相关依赖后，就可以直接从远程仓库同步到本地，再也不用满世界搜索下载 jar
+                    包了，省了很多查找和下载的烦恼。
+
+                    动力结点的Maven实战入门视频：2020最新Maven教程-Maven基础篇之Maven实战入门_哔哩哔哩_bilibili
+                </p>
+
+
+
+                <img src="./../../images/文章/p1.webp" alt="">
+            </div>
+        </div>
+        <!-- 右侧边栏 -->
+        <div class="sliderRight">
+            <!-- 热门文章 -->
+            <div class="hotArticle">
+                <h3>热门文章</h3>
+                <ul>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p1.webp" alt=""></a>
+                        <a href="./java学习.html" class="articleName">java学习</a>
+                        <span>199</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p2.webp" alt=""></a>
+                        <a href="./如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                        <span>189</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p3.webp" alt=""></a>
+                        <a href="./javaWeb.html" class="articleName">javaWeb</a>
+                        <span>179</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p4.webp" alt=""></a>
+                        <a href="./java学习.html" class="articleName">java学习</a>
+                        <span>169</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p5.webp" alt=""></a>
+                        <a href="./如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                        <span>100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 博客信息 -->
+            <div class="blogMsg">
+                <h3>博客信息</h3>
+                <div class="box">
+                    <span>文章数目</span><i>16</i>
+                    <span>评论数目</span><i>10</i>
+                    <span>运行天数</span><i>1天</i>
+                    <span>最后活动</span><i>1天前</i>
+                </div>
+            </div>
+            <!-- 标签云 -->
+            <div class="tagCloug">
+                <h3>标签云</h3>
+                <br>
+                <a href="#" class="tag">读书</a>
+                <a href="#" class="tag">java</a>
+                <a href="#" class="tag">mysql</a>
+                <a href="#" class="tag">vue</a>
+                <a href="#" class="tag">HTML</a>
+                <a href="#" class="tag">css</a>
+                <a href="#" class="tag">javascript</a>
+                <a href="#" class="tag">spring</a>
+                <a href="#" class="tag">+</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../js/scorall.js"></script> -->
+    <!-- 撒花特效 -->
+    <script src="./../../js/flower.js"></script>
+    <script src="./../../js/nav.js"></script>
+</body>
+
+</html>

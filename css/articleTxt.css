@@ -1,0 +1,40 @@
+.content {
+    margin-left: 250px;
+    width: 730px;
+    background-color: #ececec;
+    text-align: center;
+}
+.aticleTxt{
+    /* position: relative; */
+    margin-top: 60px;
+    width: 700px;
+    margin-left: 20px;
+    padding: 10px;
+    color: #000;
+    
+}
+.return{
+    position: fixed;
+    text-align: left;
+    font-size: 20px;
+    z-index: 999;
+    top: 15px;
+    
+}
+.return a:hover{
+    text-decoration: none;
+    color: #8A2BE2;
+}
+.aticleTxt h5{
+    display: block;
+    text-align: left;
+}
+.aticleTxt p{
+    text-indent: 2em;
+    font-size: 14px;
+    text-align: left;
+}
+
+.aticleTxt img{
+    width: 300px;
+}

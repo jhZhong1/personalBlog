@@ -1,0 +1,26 @@
+/* 内容 */
+.content {
+    margin-left: 251px;
+    width: 721px;
+    height: 100vh;
+    /* background-color: #ececec; */
+    background-image: linear-gradient(to right, #f0f0d2, #d3eab8);
+    text-align: center;
+}
+.content h5{
+    display: block;
+    margin-top: 80px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content span{
+    display: block;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content img{
+    width: 250px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页-文章</title>
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../css/base.css">
+    <link rel="stylesheet" href="./../../css/common.css">
+    <link rel="stylesheet" href="./../../css/articleTxt.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <nav class="mainwidth nav">
+        <div class="logo">小伙子的博客</div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-button">搜索</button>
+        </div>
+        <div class="regist">
+            还未注册？<a href="./../注册.html">点击注册</a>
+        </div>
+    </nav>
+    <!-- 主体 -->
+    <div class="main mainwidth">
+        <!-- 侧边栏 -->
+        <div class="slider">
+            <div class="headPortrait">
+                <img src="./../../images/头像.jpg" alt="头像">
+                <h6>哈哈哈哈，笑得就是你...</h6>
+            </div>
+            <h4>导航</h4>
+            <div class="sliderNav">
+                <ul>
+                    <li class="active"><a href="./../首页.html" id="nav1">首页</a></li>
+                    <li><a href="./../相册.html" id="nav2">相册</a></li>
+                    <li><a href="./../音乐.html" id="nav3">音乐</a></li>
+                    <li><a href="./../留言.html" id="nav4">留言</a></li>
+                    <li><a href="./关于.html" id="nav5">关于</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 正文 -->
+        <div class="content">
+            <div class="aticleTxt">
+                <div class="return"><a href="./../首页.html">&lt;返回</a></div>
+                <h3>javaWeb</h3>
+                <p>
+                    Java Web，是用Java技术来解决相关web互联网领域的技术栈。web包括：web服务端和web客户端两部分。Java在客户端的应用有Java
+                    Applet，不过使用得很少，Java在服务器端的应用非常的丰富，比如Servlet，JSP、第三方框架等等。Java技术对Web领域的发展注入了强大的动力。
+                </p>
+                <h5>技术简介</h5>
+                <p>
+                    Internet上供外界访问的Web资源分为：静态web资源（如html
+                    页面）：指web页面中供人们浏览的数据始终是不变。动态web资源：指web页面中供人们浏览的数据是由程序产生的，不同时间点访问web页面看到的内容各不相同。静态web资源开发技术：HTML、CSS。动态web资源开发技术：JavaScript、JSP/Servlet、ASP、PHP等。在Java中，动态web资源开发技术统称为Java
+                    Web。
+                </p>
+                <h5>项目步骤</h5>
+                <p>
+                    搭建Java Web应用的开发环境-----部署Tomcat服务器、用eclipse创建Server服务、构建Java Web项目、建立第一个JSP文件、 运行JSP文件。
+                    第一个要点是掌握tomcat的安装和部署。在Windows系统上安装Tomcat相对简单，下载压缩包解压缩到任意目录即可（目录名称不要含有中文字符）。进入tomcat的bin目录，可以直接运行startup.bat启动tomcat服务。
+                    第二个要点是在eclipse或者idea中添加Server服务。把tomcat与eclipse或者idea进行关联，方便eclipse或者idea管理tomcat。
+                    第三个要点是构建Java Web项目。Web项目开发的第一步就是要建立项目。在新建Project项目时，选择Dynamic Web Project项目类型，即可创建Web项目。
+                    第四个要点是建立的项目如何在Server中运行。选择要运行的JSP文件，单击右键，在弹出的菜单中选择Run on Server命令即可，初次运行项目时，需要配置项目在哪个Server中运行（如有多个Server）。
+                </p>
+
+                <h5>主要框架</h5>
+
+                <p>
+                    Java的Web框架虽然各不相同，但基本也都是遵循特定的路数的：使用Servlet或者Filter拦截请求，使用MVC的思想设计架构，使用约定，XML或
+                    Annotation实现配置，运用Java面向对象的特点，面向对象实现请求和响应的流程，支持Jsp，Freemarker，Velocity等视图。<br>
+                    <strong>JSP优点</strong><br>
+                    Java EE标准，这意味着有很大的市场需求和更多的工作机会<br>
+                    上手快速并且相对容易<br>
+                    有大量可用的组件库<br>
+                    <strong>JSP缺点</strong><br>
+                    大量的JSP标签<br>
+                    对REST和安全支持不好<br>
+                    没有一个统一的实现。既有SUN的实现，又有Apache的实现——MyFaces。<br>
+                    <strong>Spring MVC优点</strong><br>
+                    对Spring MVC覆盖绑定（overriding binding）、验证（validation）等提供生命周期管理<br>
+                    与许多表示层技术/框架无缝集成：JSP/JSTL、Tiles、Velocity、FreeMarker、Excel、XSL、PDF 等
+                    便于测试——归功于IoC <br>
+                    <strong>Spring MVC缺点</strong><br>
+                    大量的XML配置文件<br>
+                    太过灵活——没有公共的父控制器<br>
+                    没有内置的Ajax支持<br>
+                    <strong>Stripes优点</strong><br>
+                    不需要书写XML配置文件<br>
+                    良好的学习文档<br>
+                    社区成员很热心<br>
+                    <strong>Stripes缺点</strong><br>
+                    社区比较小<br>
+                    不如其他的项目活跃<br>
+                    ActionBean里面的URL是硬编码的<br>
+                    <strong>Struts 2优点</strong><br>
+                    架构简单——易于扩展<br>
+                    标记库很容易利用FreeMarker或者Velocity来定制<br>
+                    基于控制器或<br>
+                    者基于页面的导航<br>
+                    <strong>Struts 2缺点</strong><br>
+                    文档组织得很差<br>
+                    对新特征过分关注<br>
+                    <strong>Tapestry优点</strong><br>
+                    一旦学会它，将极大地提高生产率<br>
+                    HTML模板——对页面设计师非常有利<br>
+                    每出一个新版本，都会有大量的创新<br>
+                    <strong>Tapestry缺点</strong><br>
+                    文档过于概念性，不够实用<br>
+                    学习曲线陡峭<br>
+                    发行周期长——每年都有较大的升级<br>
+                    <strong>Wicket优点</strong><br>
+                    对Java开发者有利（不是Web开发者）<br>
+                    页面和显示绑定紧密<br>
+                    社区活跃——有来自创建者的支持<br>
+                    <strong>Wicket缺点</strong><br>
+                    HTML模板和Java代码紧挨着<br>
+                    需要对OO有较好的理解<br>
+                    Wicket逻辑——什么都用Java搞定
+                </p>
+                <h5>关于Java</h5>
+                <p>
+                    詹姆斯·高斯林博士以“Java技术之父”闻名于世。
+                    他是Java技术的创始人，
+                    作为Sun研究院院士，他亲手设计了Java语言，完成了Java技术的原始编译器和虚拟机。在他的带领下，Java现已成为互联网的标准编程模式以及分布式企业级应用的事实标准，其跨平台的技术优势为网络计算带来了划时代的变革。高斯林博士积极致力于软件开发工具的研究，以使软件开发工具的功能更强大，更容易为开发人员所使用，确保应用、服务开发的迅速完成。
+                    Java技术是Sun公司在1995年5月正式推出的。20多年来，Java已从编程语言发展成为全球第一大通用开发平台。Java技术已为计算机行业主要公司所采纳，同时也被越来越多的国际技术标准化组织所接受。1999年，Sun推出了以Java
+                    2平台为核心的J2EE、J2SE和J2ME三大平台。随着三大平台的迅速推进，在世界上形成了一股巨大的Java应用浪潮。同时，Java技术还引发了一场无法停止的大变革，为整个Java社团带来了巨大的潮水般的商业机会。
+                    Java技术及其应用将有更大的发展。据IDC预计，自2001年起的其后5年内，采用Java的IT产品的价值将翻番，在2006年将达到4.53亿美元，年增长率为14.9%。截止到2003年5月，注册Java Developer
+                    Connection (JDC)的Java开发商超过300万人，对JRE(Java运行环境)的下载达7,200万次。Sun在JavaOne
+                    2003大会上确定的目标是，在3～5年内使Java技术开发商从今天的300万发展到1,000万，以支持Java技术这一全球领先技术平台的显赫地位。
+                </p>
+
+
+
+                <img src="./../../images/文章/p3.jpg" alt="">
+            </div>
+        </div>
+        <!-- 右侧边栏 -->
+        <div class="sliderRight">
+            <!-- 热门文章 -->
+            <div class="hotArticle">
+                <h3>热门文章</h3>
+                <ul>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p1.webp" alt=""></a>
+                        <a href="./java学习.html" class="articleName">java学习</a>
+                        <span>199</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p2.webp" alt=""></a>
+                        <a href="./如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                        <span>189</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p3.webp" alt=""></a>
+                        <a href="./javaWeb.html" class="articleName">javaWeb</a>
+                        <span>179</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p4.webp" alt=""></a>
+                        <a href="./java学习.html" class="articleName">java学习</a>
+                        <span>169</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../../images/热门文章/p5.webp" alt=""></a>
+                        <a href="./如何学好高等数学.html" class="articleName">如何学好高等数学</a>
+                        <span>100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 博客信息 -->
+            <div class="blogMsg">
+                <h3>博客信息</h3>
+                <div class="box">
+                    <span>文章数目</span><i>16</i>
+                    <span>评论数目</span><i>10</i>
+                    <span>运行天数</span><i>1天</i>
+                    <span>最后活动</span><i>1天前</i>
+                </div>
+            </div>
+            <!-- 标签云 -->
+            <div class="tagCloug">
+                <h3>标签云</h3>
+                <br>
+                <a href="#" class="tag">读书</a>
+                <a href="#" class="tag">java</a>
+                <a href="#" class="tag">mysql</a>
+                <a href="#" class="tag">vue</a>
+                <a href="#" class="tag">HTML</a>
+                <a href="#" class="tag">css</a>
+                <a href="#" class="tag">javascript</a>
+                <a href="#" class="tag">spring</a>
+                <a href="#" class="tag">+</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../js/scorall.js"></script> -->
+    <!-- 撒花特效 -->
+    <script src="./../../js/flower.js"></script>
+    <script src="./../../js/nav.js"></script>
+</body>
+
+</html>

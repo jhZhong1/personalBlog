@@ -1,0 +1,138 @@
+/* 内容 */
+.content {
+    margin-left: 256px;
+    width: 725px;
+    /* height: 100vh; */
+    background-color: #ececec;
+    /* text-align: center; */
+}
+
+.album {
+    /* width: 721px; */
+    /* padding: 20px; */
+    margin-top: 10px;
+    float: left;
+}
+.top{
+    margin-top: 75px;
+}
+/* 标题 */
+.albumTitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+    color: rgb(33, 32, 32);
+
+}
+/* ul */
+.photoList {
+    margin-left: 25px;
+    height: 420px;
+    width: 680px;
+    /* background-color: #FFFFE0; */
+    background-image: linear-gradient(to right, #7f8185, #e8f2f7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* li */
+.photoItem {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.photoItem:nth-child(3n){
+    margin-right: 0;
+}
+/* 图片操作 */
+.photoItem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+   
+}
+
+.photoItem:hover img {
+    transform: scale(1.1);
+}
+/* 图片标题 */
+.photoTitle {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-out;
+}
+
+.photoItem:hover .photoTitle {
+    transform: translateY(-200%);
+}
+
+ .addPhoto {
+     width: 200px;
+     height: 200px;
+     background-color: #9c9b9a;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 15px;
+     font-size: 60px;
+     color: #fff;
+     cursor: pointer;
+     transition: all 0.3s ease-out;
+     float: left;
+ }
+
+ .addPhoto:hover {
+     transform: scale(1.1);
+ }
+
+ /* 放大效果 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modalImg {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.modalClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f9f9f9;
+    font-size: 30px;
+    cursor: pointer;
+}

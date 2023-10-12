@@ -1,0 +1,152 @@
+/* 内容 */
+.content {
+    margin-left: 259px;
+    width: 721px;
+    float: left;
+    /* height: 3000px; */
+    background-color: #ececec;
+}
+
+/* 轮播图 */
+.slideshow{
+    position: relative;
+    background-color: pink;
+    margin-left: 10px;
+    margin-top: 70px;
+    width: 700px;
+    height: 400px;
+}
+ .slideshow .slides {
+     display: flex;
+     overflow: hidden;
+ }
+
+ .slides img {
+    width: 700px;
+     height: 400px;
+     border-radius: 5px;
+ }
+ .slideshow .prev-btn,
+ .slideshow .next-btn {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 50px;
+     height: 50px;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: #fff;
+     text-align: center;
+     line-height: 50px;
+     font-size: 24px;
+     cursor: pointer;
+     z-index: 10;
+ }
+ .slideshow .prev-btn {
+     left: 0;
+ }
+
+ .slideshow .next-btn {
+     right: 0;
+ }
+ /* 小圆圈样式 */
+ .slideshow .indicator {
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     gap: 10px;
+     z-index: 10;
+ }
+
+ .indicator-item {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     background-color: #ccc;
+     cursor: pointer;
+ }
+
+ .indicator-item.active {
+     background-color: #000;
+ }
+
+/* 文章 */
+.content ul li{
+    height: 180px;
+    width: 700px;
+    margin: 15px 10px 0 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.content ul li img{
+    display: inline-block;
+    float: left;
+    width: 180px;
+    height: 180px;
+    border-radius: 15px 0 0 15px;
+}
+
+.content ul li .artile{
+    float: left;
+    margin-left: 60px;
+    height: 180px;
+    width: 450px;
+    margin-top: 15px;
+}
+
+.artile h3 a{
+    font-size: 20px;
+    color: #000000;
+}
+.artile h3 a:hover{
+    color: #FFA500;
+    text-decoration: none;
+}
+.artile p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 2;
+    height: 74px;
+    overflow: hidden;
+    color: #3d3c3c;
+    border-bottom: 1px solid rgb(157, 139, 139);
+
+}
+.artile p a:hover{
+    text-decoration: none;
+}
+
+.artile span{
+    margin-right: 30px;
+}
+.artile span:hover{
+    cursor: default;
+}
+.artile  .span1::before{
+    font-family: 'icomoon';
+        content: '\e976';
+        margin-right: 5px;
+       
+}
+.artile .span2::before {
+    font-family: 'icomoon';
+    content: '\e94e';
+    margin-right: 5px;
+   
+}
+.artile .span3::before {
+    font-family: 'icomoon';
+    content: '\e90a';
+    margin-right: 5px;
+}
+
+/* 分页 */
+.content nav ul{
+    margin-left: 250px;
+}
+.content nav ul li{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}

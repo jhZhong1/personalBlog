@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+   
+</head>
+
+<body>
+    <form id="register-form">
+        <h2>用户注册</h2>
+        <div class="form-group">
+            <label for="username">用户名：</label>
+            <input type="text" id="username" name="username" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">确认密码：</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="请再次输入密码">
+        </div>
+        <div class="form-group">
+            <label for="phone">手机号码：</label>
+            <input type="tel" id="phone" name="phone" placeholder="请输入手机号码">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" placeholder="请输入邮箱">
+        </div>
+        <div class="form-group">
+            <label for="birth-date">出生年月：</label>
+            <input type="date" id="birth-date" name="birth-date">
+        </div>
+        <div class="form-group">
+            <label>性别：</label>
+            <label><input type="radio" name="gender" value="male">男</label>
+            <label><input type="radio" name="gender" value="female">女</label>
+        </div>
+        <button type="submit" id="submit-btn">注册</button>
+        <button type="reset" id="return-btn"><a href="./首页.html">返回</a></button>
+    </form>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>
